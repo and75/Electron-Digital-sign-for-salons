@@ -45,3 +45,6 @@ Thumbs.db
 
 # Project video
 /src/assets/pubs/*
+
+# dependencies
+/node_modules
