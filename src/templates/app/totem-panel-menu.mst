@@ -1,0 +1,7 @@
+<div class="row no-gutters">
+	<div class="col">
+		<button class="btn text-center text-white" ontouchend="AppSalon.TotemLoadPage('exposant-list')">
+			VOUS RECHERCHEZ UN EXPOSANT<br>CLIQUEZ ICI
+		</button>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+<button class="btn btn-dark {{id}}" ontouchend="AppSalon.ProgramSetFilter('{{id}}')">	
+	<span class="oi oi-media-record "></span> {{libelle}}
+</button>
+
+

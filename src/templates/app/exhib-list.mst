@@ -1,0 +1,44 @@
+
+
+{{#title}}
+	<div class="bliwe-exhib-title">Exhibitors List</div>
+{{/title}}
+<div class="bliwe-exhib-filter-summary">
+	<div class="row ">
+		<div class="col-8 d-flex align-items-center">
+			<button class="btn btn-primary btn-lg bliwe-btn-reset-filter text-white bliwe-events" data-action="ExhibitorReset">
+				<span class="oi oi-reload p-2 "></span> Réinitialiser le filtre
+			</button>
+		</div>
+		<div class="col-4 text-right d-flex align-items-center justify-content-end">		
+			<div class="bliwe-totem-action-scroll">
+				<button class="btn-scroll text-white bliwe-ev-scroll" data-action="TotemScrollElement" data-param="bliwe-exhibitors-list,up">
+					<span class="pe-7s-angle-down"></span>
+				</button>
+				<button class="btn-scroll text-white bliwe-ev-scroll" data-action="TotemScrollElement" data-param="bliwe-exhibitors-list,down">
+					<span class="pe-7s-angle-up" ></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bliwe-table-exhibitors">
+	<table class="tbe-legend">
+		<tbody>
+			<tr class="tbe-tr">
+				<td class="tbe-td exhib-label">Exposant</td>
+				<td class="tbe-td stand-label">Stand</td>
+				<td class="tbe-td action"></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="tbe-body bliwe-sroller-container">
+		<table class="w-100 bliwe-exhibitors-list">
+			<tbody>
+				{{{items}}} 					
+			</tbody>
+		</table>
+	</div>
+
+</div>	
+

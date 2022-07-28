@@ -1,0 +1,50 @@
+<div class="bliwe-leaflet-popup bliwe-popup-single">
+	<div class="popup-container">
+	  <div class="popup-header">
+	  		<h3>STAND {{standsName}}</h3>
+	  </div>
+	  <div class="popup-body accordion">
+			<div class="card">
+			    <div class="card-header" id="heading-EXPOSANT-{{id}}">
+					<div class="row no-gutters">
+						<div class="col-12 popup-info secteur  d-flex align-items-center">				
+						    {{#exposants.secteur}} {{{libelle}}} {{/exposants.secteur}}
+						</div>
+					</div>
+				  <div class="row no-gutters">
+				  	<div class="col-2">
+						<img src="{{img_path}}exhibitors/{{exposants.imageLocal}}.png" class="w-100 p-1 border border-light" alt="{{exposant.label}}">  
+					</div> 
+				  	<div class="col-10 d-flex align-items-center">
+					  	<h4 style="margin: 0 0.5rem 0.2rem;" data-toggle="collapse" data-target="#EXPOSANT-{{id}}" data-stats='{"origin":"map-stand-popup", "action":"show-exhib-detail", "search":"exp_{{id}}"}'>
+						   	{{exposants.label}}
+						</h4><br>
+					</div>
+					
+					<!-- div class="col-1 d-flex align-items-center text-right">
+						<div ontouchend="AppSalon.TotemSetPercourItem('{{exposants.stand-id}}', 'exp_{{exposants.id}}');"><span class="pe-7s-shopbag bliwe-icon bliwe-icon-sm"></span></div>
+					</div -->
+
+				  </div>
+			    </div>
+				
+			    <div id="EXPOSANT-{{exposants.id}}">
+			      <div class="card-body">
+						{{#exposants.description}}	
+							<p class="card-text">
+								{{{exposants.description}}}
+							</p>
+						{{/exposants.description}}	
+					    {{#exposants.siteInternet}}<p  class="card-link">{{exposants.siteInternet}}</p>{{/exposants.siteInternet}}
+						<p class="popup-info">
+						    {{#exposants.new}} <img src="../../../assets/img/puce_new.png" style="width:20px;">{{/exposants.new}}
+            				{{#exposants.option_gold}} <img src="../../../assets/img/puce_gold.png" style="width:20px;">{{/exposants.option_gold}}
+						</p>
+						{{#exposants.getQrCode}}<p><img src="{{img_path}}exhibQrCode/{{exposants.getQrCode}}.png.png" style="width: 20%;"></p>{{/exposants.getQrCode}}
+			      </div>
+			    </div>
+			</div>
+	  </div>
+	</div>
+</div>
+

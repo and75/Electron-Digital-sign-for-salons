@@ -1,0 +1,5 @@
+    <button class="btn btn-secondary mb-2 mr-2" ontouchend="AppSalon.ProgramSetFilterElement('{{id}}')" data.themeId="{{id}}">
+        {{libelle}}
+    </button>
+
+

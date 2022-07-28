@@ -1,0 +1,81 @@
+<div class="bliwe-exhib-filter-cat">
+	{{#title}}
+	<div class="row">
+		<div class="col-md-12">
+			<div class="title">{{title}}</div>
+		</div>
+	</div>
+	{{/title}}					
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bliwe-expo-multifilter">
+				<div class="filter-menu bg-dark">
+					<button  class="btn btn-dark bliwe-events" data-action="TotemLoadFilter">
+						<span class="pe-7s-edit icon"></span> Filtrer ma recherche
+					</button>
+				</div>
+				<div class="filter-content bg-dark">
+					<div class="card">
+						<div class="bliwe-filterside-close">
+							<span class="bliwe-events" data-action="TotemCloseFilter"><span class="oi oi-circle-x"></span></a>
+						</div>
+						<!-- div class="text-left p-3">
+							<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="new,1" data-callback="TotemCloseFilter">
+								Nouveaux exposants
+							</button>
+							<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="option_gold,1" data-callback="TotemCloseFilter">
+								Recherche Investisseurs
+							</button>
+						</div -->
+						<div class="text-left p-3">
+							{{#types.apport_personnel}}
+								<div class="card-title text-white px-0 py-3">Apport personnel</div>
+								<div >
+									{{#items.apport_personnel}}
+										<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="apport_personnel,{{id}}" data-callback="TotemCloseFilter">
+											{{libelle}}
+										</button>
+									{{/items.apport_personnel}}
+								</div>
+							{{/types.apport_personnel}}
+
+							{{#types.secteurs}}
+								<div class="card-title text-white px-0 py-3">Secteur d'activité</div>
+								<div >
+									{{#items.secteurs}}
+										<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="secteur,{{id}}" data-callback="TotemCloseFilter">
+											{{libelle}}
+										</button>
+									{{/items.secteurs}}
+								</div>
+							{{/types.secteurs}}
+
+							{{#types.themes}}
+								<div class="card-title text-white px-0 py-4">Stand</div>
+								<div>
+									{{#items.themes}}
+										<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="themes,{{id}}" data-callback="TotemCloseFilter">
+											{{libelle}}
+										</button>
+									{{/items.themes}}
+								</div>
+							{{/types.themes}}
+							
+							{{#types.hall}}
+								<div class="card-title text-white px-0 pb-3">Filtrer par Hall</div>
+									<div >
+										{{#items.hall}}
+											<button class="btn btn-outline-light mb-2 mr-2 bliwe-events"  data-action="ExhibFilterExhibitors" data-param="halls,{{id}}" data-callback="TotemCloseFilter">
+												{{libelle}}
+											</button>
+											{{/items.hall}}
+									</div>
+							{{/types.hall}}			
+						</div>				
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</div>
+</div>

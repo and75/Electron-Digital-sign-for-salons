@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Programme</title>
+    <!-- APP SALON core CSS -->
+    <link href="../../../assets/css/appSalon.starter.css" rel="stylesheet">
+    <!-- Module CSS -->
+    <link href="./module.css" rel="stylesheet">
+  </head>
+  
+  <body id="body" class="bliwe-main totem map">
+    
+	<section class="appsalon-components bliwe-preloader"   data-img="../../../assets/img/preloader.gif"></section>
+	<section class="appsalon-components bliwe-spot" role="spot" data-context="totem" data-video="../../../assets/pubs/spot-totem-default.mp4" ></section>
+	<section role="main" class="bliwe-main-content">
+		
+			<div class="bliwe-module-header">
+				<div class="container-fluid">
+				    <div class="row">
+				    	<div class="col-md-12">
+				    		<div class="appsalon-components bliwe-totem-menu text-center"  data-action='setMenuTotem' data-type="totem"></div>
+				    	</div>
+					</div>
+					<div class="row">
+						<div class="appsalon-components bliwe-plantotem-menu"  data-action='TotemSetPlanMenu'></div>
+					</div>
+				</div>
+			</div>
+			<div class="bliwe-module-body">
+				<div class="module-content-left">
+					<div class="bliwe-slide-content exposant-list">
+						<div class="appsalon-components bliwe-exhib-filtre"  data-action='ExhibSetFilters' data-type="all" data-context="totem" ></div>
+						<div class="appsalon-components bliwe-exhib-list"  data-action='ExhibSetExhibitorsList' data-type="all"></div>
+					</div>
+					<!-- div class="bliwe-slide-content parcours">
+							<div class="appsalon-components bliwe-percour-panel"  data-action='TotemSetPercourPanel' data-type="all"></div>
+					</div -->					
+				</div>
+				<div class="module-content-main">
+					<div class="container-fluid">
+						<div id="mapid" class="bliwe-map-container"></div>
+						<div class="row">
+
+							<!-- div class="col-12">
+								<div class="appsalon-components bliwe-map-legend text-center"      data-img='../../../assets/img/plan-legend.png'></div>
+							</div -->
+							<div class="col-12">
+								<div class="appsalon-components bliwe-map-menu" data-action="TotemSetMapMenu"></div>
+							</div>
+						</div>
+					</div>
+					<!-- div class="bliwe-module-footer">
+						<div class="appsalon-components bliwe-pub-zone bliwe-pub-zone-1 text-center" role="spot" data-video="spot-totem-zone1.mp4" data-path="app" data-width="100%" data-height=" " data-settings="autoplay loop"></div>
+					</div -->				
+				</div>
+			</div>
+			<!-- div class=" bliwe-banner-footer">
+				<div class="appsalon-components" data-img='../../../assets/img/totem-banner-body.jpg'></div>
+				<div class="appsalon-components" data-img='../../../assets/img/totem-banner-footer.jpg'></div>
+			</div -->
+			
+
+	</section>
+
+	<script>
+
+		// Require App-Salon js files
+		require('../../../../renderer.js');
+
+		// Require js specifique files
+		require('./AppSalon.TotemMapExt.js'); 
+
+		// Require js specifique files
+		require('./totem-map.js');
+
+		// You can also require other files to run in this process
+
+	</script>
+	    
+  </body>
+</html>

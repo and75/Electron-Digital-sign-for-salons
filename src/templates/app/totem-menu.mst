@@ -1,0 +1,43 @@
+<ul class="list-inline text-right" id="div_click">
+	
+	{{#salle}}	
+		<li class="list-inline-item text-center bt-totem-menu-salle {{#salle_active}}active{{/salle_active}}" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_salle"}'>
+			<a class="bt-program bliwe-events"  data-action="TotemGoTo" data-param='../totem-salle/index.html'><span class="pe-7s-angle-down"></span>Programme</a>
+		</li>
+	{{/salle}}
+
+	{{#programme}}
+		<li class="list-inline-item text-center bt-totem-menu-programme  {{#programme_active}}active{{/programme_active}}" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_programme"}'>
+			<a class="bt-program bliwe-events"  data-action="TotemGoTo" data-param='../totem-programme/index.html'><span class="pe-7s-angle-down"></span>Programme</a>
+		</li>
+	{{/programme}}
+	
+	{{#map}}
+		<li class="list-inline-item text-center  bt-totem-menu-map {{#map_active}}active{{/map_active}}" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_plan"}'>
+			<a class="bt-map bliwe-events" data-action="TotemGoTo" data-param='../totem-map/index.html'><span class="pe-7s-angle-down"></span>Plan</a>
+		</li>
+	{{/map}}
+
+	{{#map_pannel}}
+		<li class="list-inline-item text-center bt-totem-menu-map {{#map_active}}active{{/map_active}}" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_Floor map"}'>
+			<a class="bt-map bliwe-events" data-action="TotemClosePage"><span class="pe-7s-angle-down"></span>Plan</a>
+		</li>
+	{{/map_pannel}}
+	
+	{{#programme_parcour}}
+		<li class="list-inline-item  bt-totem-menu-exposant-list text-center {{#parcour_active}}active{{/parcour_active}}" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_percour"}'>
+			<!-- span class="bliwe-percours-marker"></span -->
+			<a class="bt-create-course bliwe-events" data-action="TotemLoadPage" data-param='exposant-list' ><span class="pe-7s-angle-down"></span>Exposants</a>
+		</li>
+	{{/programme_parcour}}
+	
+	{{#parcour}}
+		<li class="list-inline-item text-center bt-totem-menu-exposant-list" data-stats='{"origin":"totem-menu", "action":"go-to", "search":"module_percour"}'>
+			<!-- span class="bliwe-percours-marker"></span -->
+			<a class="bt-create-course bliwe-events" data-action="TotemGoTo" data-param='../totem-map/index.html?exhib=true' ><span class="pe-7s-angle-down"></span>Exposants</a>
+		</li>
+	{{/parcour}}
+	
+
+
+</ul>

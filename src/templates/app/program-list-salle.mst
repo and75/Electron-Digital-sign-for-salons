@@ -1,0 +1,13 @@
+<div class="bliwe-program-nextOne">
+    {{{nextOne}}}
+</div>
+{{#programItems}}
+<div class="bliwe-program-next container">
+<h2 class="px-5 pt-4 pb-3">À VENIR</h2>
+<div class="bliwe-program-scroller">
+	<ul class="list-unstyled">
+		{{{programItems}}}
+	</ul>
+</div>
+</div>
+{{/programItems}}

@@ -1,0 +1,588 @@
+/*
+*  AppSalon v2.2
+*  Style for program screen
+*  16/10/2019
+*/
+
+.programme .bliwe-main-content {
+    height: 1920px;
+    overflow: hidden;
+}
+
+
+/*MENU DAYS*/
+
+.program-header-title {
+    padding: 11px 11.5% 0;
+}
+
+.programme .program-header-menuDay ul {
+    text-align: left;
+    padding-left: 11.5%;
+}
+
+.programme .menu-days .menu-days-item {
+    font-family: 'Akrobat-Bold';
+    font-size: 1.5rem;
+    background: #fff;
+    width: 158px;
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+    line-height: unset;
+}
+
+.programme .menu-days-item.active {
+    background-color: #fff;
+    color: #e63551;
+}
+
+
+/*FILTER BY TYPE*/
+
+.programme .bliwe-filter-menu {
+    background-color: #1d1d1b;
+    text-align: center;
+    padding: 15px;
+}
+
+.programme .bliwe-filter-menu .btn {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+.programme .bliwe-filter-menu .btn.resetFilter {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+    padding: 4px 18px 0;
+}
+
+.programme .bliwe-program-type-filter {
+    margin: 30px 15px;
+}
+
+.programme .bliwe-program-type-filter .btn {
+    text-transform: uppercase;
+    font-size: .80rem;
+}
+
+.programme .bliwe-program-type-filter .btn.resetFilter {
+    margin-top: 5px;
+}
+
+.programme .bliwe-program-type-filter .resetFilter span {
+    font-size: 4.5rem;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-1 span.oi {
+    color: #E63551ff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-2 span.oi {
+    color: #E94665ff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-3 span.oi {
+    color: #EB5878ff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-4 span.oi {
+    color: #EE698Cff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-5 span.oi {
+    color: #F07A9Fff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-6 span.oi {
+    color: #F38CB3ff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-7 span.oi {
+    color: #F59DC6ff;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-8 span.oi {
+    color: #6c757d;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-9 span.oi {
+    color: #6c757d;
+}
+
+.programme .bliwe-program-type-filter .btn.TYPE-10 span.oi {
+    color: #6c757d;
+}
+
+
+/*FILTER ACCORDEON*/
+
+.programme .bliwe-program-accordeon-filter {
+    padding: 0;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-menu {
+    margin-bottom: 0;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content {
+    background: #e4dede;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content .card {
+    background: #e4dede;
+    border: 0;
+    padding: 15px 16% 15px;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content .card-body {
+    padding: 0;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content .card-body span {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content .card-close {
+    width: 43px;
+    position: absolute;
+    right: 76px;
+}
+
+.programme .bliwe-program-accordeon-filter .bliwe-filter-content .card-close span {
+    font-size: 2.5rem;
+}
+
+
+/*SCROLLER FOR CONFERENCES*/
+
+.programme .bliwe-conferences-list {
+    margin: 0 60px;
+}
+
+.programme .bliwe-program-scroller {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 1220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 45px 0;
+}
+
+
+/*LIST CONFERENCES*/
+
+.programme .bliwe-program-card .card {
+    color: #1d1d1b;
+}
+
+
+/*CARD CONFERENCES*/
+
+.programme .bliwe-program-card .card-header {
+    font-family: 'Akrobat-Bold';
+    font-size: 0.8rem;
+    padding: .50rem .50rem;
+    border: 0;
+    background: #fff;
+}
+
+.programme .bliwe-program-card .card-body {
+    padding: 1rem .8rem 0;
+    height: 263px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.programme .bliwe-program-card .card-footer-filtre {
+    padding: .8rem .8rem 0;
+    height: 65px;
+    overflow: hidden;
+    color: #676767;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    display: flex;
+}
+
+.programme .bliwe-program-card .card-footer-filtre p {
+    align-self: flex-end;
+    margin: 0 0 5px;
+}
+
+.programme .bliwe-program-card .card-footer {
+    padding: .5rem .26rem;
+}
+
+.programme .bliwe-program-card .card-footer p,
+.programme .bliwe-program-card .card-header p {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 2px 8px
+}
+
+.programme .bliwe-program-card .card-text {
+    display: block;
+}
+
+.programme .bliwe-program-card .card-type-img {
+    width: 100%;
+    height: 87px;
+    background-color: #ccc;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.programme .bliwe-program-card .card-title {
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+.programme .bliwe-program-card .card-subtitle {
+    color: #419dd4;
+    font-size: 0.7rem;
+}
+
+.programme .bliwe-program-card ul.intervenat-liste {
+    font-size: .8rem;
+    margin: 7px 0 15px;
+}
+
+.programme .bliwe-program-card .card-footer {
+    background: #fff;
+}
+
+.programme .bliwe-program-card .card-footer .date {
+    color: #e4003a;
+    font-weight: bold;
+}
+
+.programme .bliwe-program-card .card-footer .salle {
+    color: #1d1d1b;
+    font-weight: bold;
+    font-size: .6rem;
+}
+
+.programme .bliwe-program-card .card-round-plus {
+    color: #2d173b;
+}
+
+
+/*CARD CONFERENCES TYPE*/
+
+/*.programme .bliwe-program-card .card-header p {
+    background-color: #e7e7e7;
+    min-height: 25px;
+}
+
+.programme .bliwe-program-card.THEME-1 .card-header p {
+    background-color: #4b8c93;
+}
+
+.programme .bliwe-program-card.THEME-2 .card-header p {
+    background-color: #386195;
+}
+
+.programme .bliwe-program-card.THEME-3 .card-header p {
+    background-color: #5f3578;
+}
+
+.programme .bliwe-program-card.THEME-4 .card-header p {
+    background-color: #b13157;
+}
+
+.programme .bliwe-program-card.THEME-5 .card-header p {
+    background: #b66121
+}
+
+.programme .bliwe-program-card.THEME-6 .card-header p {
+    background: linear-gradient(90deg, #e83914, #f8a90b);
+}
+
+.programme .bliwe-program-card.THEME-7 .card-header p {
+    background: linear-gradient(90deg, #5ebfa6, #c8cf09);
+}
+
+.programme .bliwe-program-card.THEME-8 .card-header p {
+    background: linear-gradient(90deg, #55b9d0, #89c8b5);
+}
+
+.programme .bliwe-program-card.THEME-9 .card-header p {
+    background: linear-gradient(90deg, #7065aa, #0eb8ed);
+}
+
+.programme .bliwe-program-card.THEME-10 .card-header p {
+    background: linear-gradient(90deg, #df0a7e, #692280);
+}
+*/
+
+.programme .bliwe-program-message {
+    display: none;
+}
+
+.programme .bliwe-program-message.active {
+    display: block;
+}
+
+
+.programme .bliwe-program-card .card-header p {
+    background-color: #e7e7e7;
+    min-height: 20px;
+}
+
+.programme .bliwe-program-card.TYPE-1 .card-header p {
+    background: #00baf8;
+}
+
+.programme .bliwe-program-card.TYPE-2 .card-header p {
+    background: #000000;
+}
+
+.programme .bliwe-program-card.TYPE-3 .card-header p {
+    background: #00549F;
+}
+
+.programme .bliwe-program-card.TYPE-4 .card-header p {
+    background: #E4003A;
+}
+
+.programme .bliwe-program-card.TYPE-5 .card-header p {
+    background: #1a2e50;
+}
+
+.programme .bliwe-program-card.TYPE-6 .card-header p {
+    background: #5a99ff;
+}
+
+.programme .bliwe-program-card.TYPE-7 .card-header p {
+    background-color: #4b8c93;
+}
+
+
+.programme .bliwe-program-card.TYPE-8 .card-header p {
+    background-color: #5f3578;
+}
+
+.programme .bliwe-program-card.TYPE-9 .card-header p {
+    background-color: #b13157;
+}
+
+.programme .bliwe-program-card.TYPE-10 .card-header p {
+    background: #b66121
+}
+
+/*CARD SALLE*/
+
+.programme.salle .bliwe-program-card .card-body {
+    padding: 2rem .8rem 0;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: visible;
+}
+
+.programme.salle .bliwe-program-card .bliwe-logo {
+    text-align: center;
+    margin: 3px -23px 35px;
+    padding: 48px 0 25px 0px;
+    background: #e4003a;
+}
+
+.programme.salle .bliwe-logo h1.programme-title-salle {
+    font-family: "Deadstock";
+    font-size: 4.7rem;
+    color: #ffffff !important;
+}
+
+.programme.salle .bliwe-program-card .bliwe-logo img {
+    width: 200px;
+}
+
+.programme.salle .bliwe-program-card .card-nextone {
+    border: 10px solid #e4003a!important;
+    padding: 25px 23px 41px;
+    margin: 0 49px;
+}
+
+.programme.salle .bliwe-program-card .card-nextone h1 {
+    color: #e4003a;
+    padding: 0 0 30px;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.programme.salle .bliwe-program-card .card-text {
+    display: block;
+    margin-bottom: 0px;
+    overflow-x: scroll;
+    max-height: 230px;
+}
+
+.programme.salle .bliwe-program-card .card-nextone .card-header {
+    font-family: 'Akrobat-Bold';
+    font-size: 1rem;
+    padding: 1rem .8rem 0;
+}
+
+.programme.salle .bliwe-conferences-list {
+    margin: 0 100px 0 136px;
+}
+
+.programme.salle .bliwe-program-card p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.programme.salle .bliwe-program-card h5.card-title {
+    font-size: 1.5rem;
+}
+
+.programme.salle .bliwe-program-scroller {
+    position: relative;
+    top: 0;
+    height: 460px;
+    overflow-y: scroll;
+    padding: 20px 2.3rem;
+}
+
+.programme.salle.lab .bliwe-module-header {
+    height: 6px;
+}
+
+.programme.salle.lab .bliwe-program-card .bliwe-logo {
+    padding: 0px 107px 19px;
+    text-align: left;
+    font-size: 4rem;
+}
+
+.programme.salle.lab .bliwe-program-nextOne .bliwe-logo img {
+    width: 350px;
+}
+
+
+/*MODAL*/
+
+.programme .bliwe-program-modal {
+    background-color: #00549f;
+}
+
+@media screen and (min-width: 576px) {
+    .programme .bliwe-program-modal .modal-dialog {
+        margin: 10rem auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 980px;
+    }
+}
+
+.programme .bliwe-program-modal .modal-content {
+    color: #1d1d1b;
+    border: 8px solid #ececec;
+    border-radius: 0;
+}
+
+.programme .bliwe-program-modal .modal-header {
+    border-bottom: 0;
+}
+
+.programme .bliwe-program-modal .modal-header .close {
+    margin: -50px auto;
+    padding: 6px 0 12px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 116px;
+    width: 67px;
+    font-size: 3rem;
+}
+
+.programme .bliwe-program-modal .modal-body {
+    padding: 25px;
+}
+
+.programme .bliwe-program-modal .modal-body .title {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+}
+
+.programme .bliwe-program-modal .modal-body .description {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.programme .bliwe-program-modal .modal-body .partenaires,
+.programme .bliwe-program-modal .modal-body .intervenants {
+    font-size: 0.6rem;
+}
+
+.programme .bliwe-program-modal .modal-body .partenaires h4,
+.programme .bliwe-program-modal .modal-body .intervenants h4 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.programme .bliwe-program-modal .modal-footer {
+    display: block;
+    border: 0
+}
+
+.programme .bliwe-program-modal .modal-footer p {
+    margin: 0;
+}
+
+.programme .bliwe-program-modal .date {
+    border-top: 5px solid #eaeaea;
+    padding: 5px 0 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e4003a;
+}
+
+.programme .bliwe-program-modal .salle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.programme.salle.lab .bliwe-program-modal {
+    background: url(../../img/totem_background-global2.png);
+}
+
+.programme.salle.lab .bliwe-program-modal .modal-content {
+    color: #1d1d1b;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.programme.salle.lab .card-lab {
+    border: 8px solid#e4003a;
+}
+
+.programme.salle.lab .lab-logo {
+    margin-bottom: 75px !important;
+}
+
+.programme.salle.lab .card-stp-list {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+    .programme.salle.lab .bliwe-program-modal .modal-dialog {
+        margin: 2rem auto;
+    }
+}

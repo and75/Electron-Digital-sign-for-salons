@@ -1,0 +1,34 @@
+
+<div class="modal-body">
+    {{#hiline}}
+    <div class="lab-logo mb-5 text-center"><img src="{{img_path}}exhibitors/{{hostedBy}}.jpg.png"></div>
+    <div class="card card-lab mb-4 p-5">
+            <div class="card-header text-center">
+                <img src="{{img_path}}exhibitors/{{imageLocal}}.png">
+            </div>
+            <div class="card-body">
+                <h1 class="text-primary">{{label}}</h1>
+                <p class="card-pays">
+                    {{pays}}
+                </p>
+                <p class="card-text">
+                    {{description}}
+                </p>
+            </div>
+            <div class="card-body"><small class="text-primary">{{#secteur}}{{secteurs}}{{/secteur}}</small></div>
+
+      {{/hiline}}
+    </div>
+    <div id="250" class="card mb-4 card-stp-list" style="background: transparent;">
+        <div class="card-body">
+            {{#startups}} 
+                <h3 class="mb-3">Startup list:</h3>
+                <ul class="list-inline text-uppercase">
+                    {{{startups}}}
+                </ul>
+            {{/startups}} 
+        </div>
+    </div>
+</div>
+</div>
+	

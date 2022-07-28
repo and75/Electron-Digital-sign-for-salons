@@ -1,0 +1,46 @@
+<div class="col-md-4 px-2  bliwe-program-card SALLE-{{salle_id}} {{day_conf}} TIME-{{date_fin_timestamp}} {{#type}} {{id}} {{/type}}  {{#thematiques}} {{id}} {{/thematiques}} {{#partenaires}} {{id}} {{/partenaires}} {{#parcours}} {{id}} {{/parcours}} ">
+<div id="{{id}}" class="card mb-4" >
+		  <div class="card-header">
+		     <p class="tags">{{#type}} {{libelle}} {{/type}}</p>
+		  </div>
+		  <div class="card-body">
+			<h5  class="card-title" bliwe-events" data-action="ProgramShowBox" data-param="{{id}}">{{titre}}</h5>
+			<p class="small bold p-0 m-0 mb-2">Numéro de l'intervention {{code_intervention}}</p>
+			<!-- p   class="card-text">
+				{{description}}
+			</p -->
+			{{#ctrlIntervenants}}
+			<div class="intervenat-liste-new">
+	            {{#intervenants}}
+					<div class="row">
+  						<div class="col-2 pr-0 avatar">
+						  <img src="{{img_path}}intervenants/{{imageLocal}}.png" class="border rounded rounded-circle w-100 mb-2" alt="{{nom}}">
+  						</div>
+  						<div class="col-10 detail">
+    						<span class="infos">{{prenom}} {{nom}}</span><span class="fonction d-block small">{{fonction}}<span>
+  						</div>
+					</div>
+	            {{/intervenants}}
+			</div>
+ 		    {{/ctrlIntervenants}}
+		  </div>
+		  <!-- div class="card-footer-filtre border-white">
+				<p>
+					{{#thematiques}}#{{libelle}} {{/thematiques}}
+				</p>
+		  </div -->
+		  <div class="card-footer">
+		  	 <div class="row">
+		  	 	<div class="col-md-9 d-flex align-items-center">
+		     		<div>
+					 	<p class="date">{{heure_debut}} / {{heure_fin}}</p>
+						<p class="salle">{{salle_libelle}}</p>
+					</div>	
+		     	</div>
+				 <div class="col-md-3  d-flex align-items-center justify-content-end">
+		     		<span class="oi oi-plus bliwe-icon bliwe-icon-dark bliwe-icon-md mr-3  bliwe-events bg-primary" data-action="ProgramShowBox" data-param="{{id}}"></span>
+		     	</div>
+			 </div>	
+		  </div>
+</div>
+</div>

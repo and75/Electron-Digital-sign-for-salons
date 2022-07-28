@@ -1,0 +1,892 @@
+/*TYPO*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Akrobat-Black';
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4,
+h5 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+b,
+.bold {
+    font-family: 'Akrobat-Black';
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+/*SCROOL BAR*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*SIZER*/
+
+.vh-10 {
+    height: 10vh !important;
+}
+
+.vh-15 {
+    height: 15vh !important;
+}
+
+.vh-20 {
+    height: 20vh !important;
+}
+
+.vh-25 {
+    height: 25vh !important;
+}
+
+.vh-30 {
+    height: 30vh !important
+}
+
+.vh-35 {
+    height: 35vh !important;
+}
+
+.vh-40 {
+    height: 40vh !important;
+}
+
+.vh-45 {
+    height: 45vh !important;
+}
+
+.vh-50 {
+    height: 50vh !important;
+}
+
+.vh-55 {
+    height: 55vh !important;
+}
+
+.vh-60 {
+    height: 60vh !important;
+}
+
+.vh-65 {
+    height: 65vh !important;
+}
+
+.vh-70 {
+    height: 70vh !important;
+}
+
+.vh-75 {
+    height: 75vh !important;
+}
+
+.vh-80 {
+    height: 80vh !important;
+}
+
+.vh-85 {
+    height: 85vh !important;
+}
+
+.vh-90 {
+    height: 90vh !important;
+}
+
+.vh-95 {
+    height: 95vh !important;
+}
+
+.vh-100 {
+    height: 100vh !important;
+}
+
+.vw-10 {
+    width: 10vw !important;
+}
+
+.vw-15 {
+    width: 15vw !important;
+}
+
+.vw-20 {
+    width: 20vw !important;
+}
+
+.vw-25 {
+    width: 25vw !important;
+}
+
+.vw-30 {
+    width: 30vw !important
+}
+
+.vw-35 {
+    width: 35vw !important;
+}
+
+.vw-40 {
+    width: 40vw !important;
+}
+
+.vw-45 {
+    width: 45vw !important;
+}
+
+.vw-50 {
+    width: 50vw !important;
+}
+
+.vw-55 {
+    width: 55vw !important;
+}
+
+.vw-60 {
+    width: 60vw !important;
+}
+
+.vw-65 {
+    width: 65vw !important;
+}
+
+.vw-70 {
+    width: 70vw !important;
+}
+
+.vw-75 {
+    width: 75vw !important;
+}
+
+.vw-80 {
+    width: 80vw !important;
+}
+
+.vw-85 {
+    width: 85vw !important;
+}
+
+.vw-90 {
+    width: 90vw !important;
+}
+
+.vw-95 {
+    width: 95vw !important;
+}
+
+.vw-100 {
+    width: 100vw !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.w-25 {
+    width: 25% !important;
+}
+
+.w-30 {
+    width: 30% !important
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-55 {
+    width: 55% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-65 {
+    width: 65% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+}
+
+.text-primary {
+    color: #e4003a!important;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*LAYOUT*/
+
+.bliwe-main {
+    font-family: 'Akrobat';
+    background-color: #ececec;
+    color: #1d1d1b;
+}
+
+.bliwe-main-content {}
+
+.bliwe-overlay {}
+
+.bliwe-spot {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e4003a;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}
+
+.bliwe-preloader {
+    background-color: #e4003a;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #e4003a;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}
+
+.bliwe-exhib-body {
+    background: #f4f1e8;
+    padding: 30px 15px;
+}
+
+.bliwe-banner-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bliwe-icon {
+    font-size: 2rem;
+    background: #e4003a;
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.bliwe-icon-sm {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.bliwe-icon-md {
+    padding: 11px;
+    font-size: 1.2rem;
+}
+
+.bliwe-icon-dark {
+    background: #1d1d1b;
+    color: #ffffff;
+}
+
+.bliwe-icon-light {
+    background: #ffffff;
+    color: #1d1d1b;
+    font-weight: bold;
+}
+
+
+/*PRELOADER*/
+
+.bliwe-preloader img {
+    display: block;
+    margin: -225px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*TOTEM MENU*/
+
+.bliwe-totem-menu {
+    color: #848484;
+    margin: 0 -15px;
+}
+
+.bliwe-totem-menu ul {
+    margin: 0;
+}
+
+.bliwe-totem-menu ul>li {
+    background: #e4dede;
+    width: 19%;
+    padding: 26px 17px 25px;
+    margin-right: .85rem !important;
+}
+
+.bliwe-totem-menu ul>li.active {
+    background: #1d1d1b;
+    color: #fff;
+}
+
+.bliwe-totem-menu ul>li a {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bliwe-totem-menu ul>li a span {
+    display: block;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.bliwe-totem-menu ul>li a.active {
+    color: #fff !important;
+}
+
+.bliwe-percours-marker {
+    display: none;
+    position: absolute;
+    right: 180px;
+    top: 34px;
+    font-family: 'Akrobat-Black';
+    font-size: 2rem;
+    color: #fff;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    background: #e4003a;
+    border-radius: 100%;
+}
+
+.bliwe-percours-marker.active {
+    display: block;
+}
+
+
+/*MAP*/
+
+.bliwe-map-menu {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.bliwe-map-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bliwe-map-menu li {
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    vertical-align: bottom;
+    padding: 0 7px;
+}
+
+.bliwe-map-menu li .btn {
+    background: #e63551;
+    line-height: 0;
+    border-radius: 100%;
+    padding: 6px 8px 9px;
+}
+
+.bliwe-map-menu li.size-1 .btn {
+    font-size: 0.9rem;
+}
+
+.bliwe-map-menu li.size-2 .btn {
+    font-size: 1.4rem;
+}
+
+.bliwe-map-menu li.size-3 .btn {
+    font-size: 2rem;
+}
+
+.bliwe-map-menu li.size-4 .btn {
+    font-size: 2.5rem;
+}
+
+.bliwe-map-menu li.zoom-label {
+    font-size: 1.2rem;
+    color: #1d1d1b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*FILTER PANEL*/
+
+.bliwe-filter-panel .title {
+    background: #e40869;
+    color: #fff;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.bliwe-filter-panel .body {
+    padding: 15px;
+}
+
+.bliwe-exhib-filter-cat {}
+
+
+/*EXHIBITOR SEARCH TEXT*/
+
+.bliwe-exhib-filter-text {
+    margin-bottom: 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.bliwe-exhib-filter-text .input-group-text {
+    background: #ffffff;
+    border: 0;
+    border-right: 0;
+    font-size: 2rem;
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+    padding: 0 25px;
+    color: #6c7073;
+}
+
+.bliwe-exhib-filter-text .title {
+    margin-bottom: 15px;
+    color: #1d1d1b;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bliwe-exhib-filter-text input {
+    border: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/* EXBHITORS MULTI FILTER */
+
+.bliwe-expo-multifilter {
+    height: 100px;
+}
+
+.bliwe-exhib-filter-reset {
+    display: none;
+}
+
+.bliwe-expo-multifilter .filter-menu {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 5px 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.bliwe-expo-multifilter .filter-menu .btn {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.bliwe-expo-multifilter .filter-menu span.icon {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.bliwe-expo-multifilter .filter-menu .resetFilter {
+    border-radius: 66px;
+    font-size: 2.2rem;
+    width: 70px;
+    color: #fff;
+    height: 70px;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    left: 17%;
+}
+
+.bliwe-expo-multifilter .filter-content {
+    text-align: center;
+}
+
+.bliwe-expo-multifilter .card,
+.bliwe-expo-multifilter .card-body {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.bliwe-expo-multifilter .card {
+    background-color: transparent;
+}
+
+
+/*EXHIBITOR  FILTER ALFA*/
+
+.bliwe-exhib-filter-alfa {
+    display: none;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bliwe-exhib-filter-alfa ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.bliwe-exhib-filter-alfa ul li {
+    display: inline-block;
+    background: #f08a0b;
+    color: #fff;
+    padding: 2px 6px;
+    margin: 1px;
+}
+
+.plan-xl-main .bliwe-exhib-filter-alfa ul li {
+    background: #6c757d;
+}
+
+.bliwe-exhib-filter-alfa ul li.active {
+    background: #e40869;
+}
+
+
+/*EXHIBITOR TABLE LIST*/
+
+.bliwe-table-exhibitors {
+    color: #1d1d1b;
+    padding: 15px 30px 0;
+}
+
+.bliwe-table-exhibitors .tbe-legend {
+    width: 100%;
+}
+
+.bliwe-table-exhibitors .tbe-body {
+    display: block;
+    width: 100%;
+    height: 680px;
+    overflow-y: scroll;
+}
+
+.bliwe-table-exhibitors .tbe-legend ul,
+.bliwe-table-exhibitors .tbe-body ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-tr,
+.bliwe-table-exhibitors .tbe-body .tbe-tr {
+    display: table-row;
+    width: 100%;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-tr {
+    border-bottom: 2px solid #848484;
+    margin-bottom: 18px;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-td,
+.bliwe-table-exhibitors .tbe-body .tbe-td {
+    font-family: "Akrobat-bold";
+    display: table-cell;
+    padding: 10px 10px;
+    text-align: left;
+    line-height: 1.1;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    table-layout: auto;
+    border-spacing: 30px;
+    overflow: hidden;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-td.exhib-label,
+.bliwe-table-exhibitors .tbe-body .tbe-td.exhib-label {
+    width: 52%;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-td.hall-label,
+.bliwe-table-exhibitors .tbe-body .tbe-td.hall-label {
+    width: 20%;
+}
+
+.bliwe-table-exhibitors .tbe-body .tbe-td.stand-label {
+    color: #1d1d1b;
+}
+
+.bliwe-table-exhibitors .tbe-legend .tbe-td.action-label,
+.bliwe-table-exhibitors .tbe-body .tbe-td.action-label {
+    width: 17%;
+    text-align: center;
+}
+
+.bliwe-table-exhibitors .tbe-body .tbe-td.action-label {
+    color: #e4003a;
+}
+
+.bliwe-table-exhibitors .tbe-message {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #e4003a;
+}
+
+
+/*no-percour*/
+
+.no-percour .bliwe-table-exhibitors .tbe-legend .set-on-percour,
+.no-percour .bliwe-table-exhibitors .tbe-body .set-on-percour {
+    display: none;
+}
+
+
+/*KEYBOARD*/
+
+.simple-keyboard {
+    position: absolute;
+    background: #f7f7f7;
+    left: 0;
+    top: 79px;
+    width: 100%;
+    height: 290px;
+    padding-top: 15px;
+    z-index: 100;
+}
+
+.jkeyboard-close {
+    /*display:none*/
+}
+
+.jkeyboard .jline ul li {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 3px #101010;
+    -webkit-box-shadow: inset 0 0 3px #101010;
+    margin: 10px 0 1px 14px;
+    color: #1d1d1b;
+    border-radius: 5px;
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 52px;
+}
+
+
+/*MAP POPUP*/
+
+.leaflet-popup-content-wrapper {
+    width: 430px;
+    margin-top: 20px;
+    border: 6px solid #ffffff;
+    border-radius: 0;
+}
+
+.leaflet-popup-tip {
+    background: #ffffff/*#e63551*/
+    ;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, .4);
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    margin-left: -21px;
+    font-size: 30px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #1d1d1b;
+    background: #1d1d1b;
+    border-radius: 50px;
+    padding: 8px 5px;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    padding: 0;
+}
+
+.bliwe-leaflet-popup .popup-container {
+    background: #fff;
+    min-height: 8vh;
+    padding-bottom: 16px;
+    max-height: 20vh;
+}
+
+.bliwe-leaflet-popup .popup-header {
+    text-align: center;
+    padding-top: 15px;
+    background: #fff;
+    border: 0;
+    color: #e4003a;
+}
+
+.bliwe-leaflet-popup .popup-body {
+    margin: 0 3%;
+    padding: 3% 0;
+    border-top: 2px solid #ccc;
+    overflow-y: scroll;
+    max-height: 15vh;
+}
+
+.bliwe-leaflet-popup .popup-info {
+    color: #e4003a;
+}
+
+.bliwe-leaflet-popup .popup-info.secteur {
+    font-size: 0.9rem;
+}
+
+.bliwe-leaflet-popup .accordion>.card {
+    margin-bottom: 0;
+    background: #fff;
+    border: 0;
+    padding: 5px 0;
+}
+
+.bliwe-leaflet-popup .accordion>.card .card-header {
+    margin-bottom: -1px;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 5px 0;
+}
+
+.bliwe-leaflet-popup .accordion>.card .card-body {
+    padding: 0 0 1.25rem;
+}
+
+.bliwe-leaflet-popup .accordion>.card .card-header .oi {
+    font-size: 1rem;
+}
+
+.bliwe-leaflet-popup .btn-add-parcours {
+    font-size: 1rem;
+    background-color: #e4003a;
+    color: #fff !important;
+    padding: 2px 5px 0px;
+    border-radius: 100%;
+}
+
+
+/*PARTENAIRE*/
+
+.bliwe-partenaire-container {
+    border-top: 6px solid #dee2e6;
+    width: 70%;
+    padding: 25px 25px 0;
+}
+
+.border-light {
+    border-color: #dee2e6!important;
+}

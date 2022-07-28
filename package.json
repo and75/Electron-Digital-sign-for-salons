@@ -1,0 +1,55 @@
+{
+    "name": "appsalon-digital-sign-2022",
+    "version": "1.1.1",
+    "description": "Application for salon and event digital signing",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build-os": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=builds",
+        "build-linux": "electron-packager . AppSalonV2.4-GO-ENTREPENEUR-TOUCH-LAST --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=builds",
+        "build-win": "electron-packager . AppSalonV2.4-GO-ENTREPENEUR-TOUCH-LAST --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=builds --version-string.CompanyName=Bliwe --version-string.FileDescription=Bliwe --version-string.ProductName=\"Bliwe AppSalon V2\"",
+        "build-debian": "electron-installer-debian --src builds/AppSalonV2.4-GO-ENTREPENEUR-LAST-linux-x64/ --arch amd64 --config debian.json"
+    },
+    "keywords": [
+        "Electron",
+        "events",
+        "salon",
+        "stands",
+        "exhibitors"
+    ],
+    "author": "Andrea Porcella",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "bootstrap": "^4.1.3",
+        "electron": "^5.0.2",
+        "electron-local-crash-reporter": "^1.0.2",
+        "electron-packager": "^13.1.1",
+        "jquery": "^3.6.0",
+        "leaflet": "^1.5.1",
+        "leaflet-draw": "^1.0.4",
+        "leaflet-search": "^2.9.8",
+        "mustache": "^3.0.1",
+        "owl-carousel": "^1.0.0",
+        "popper.js": "^1.14.4"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "base64-img": "^1.0.4",
+        "bootstrap": "^4.1.3",
+        "electron": "^5.0.2",
+        "electron-log": "^3.0.6",
+        "electron-packager": "^13.1.1",
+        "hammerjs": "^2.0.8",
+        "js-search": "^2.0.0",
+        "leaflet": "^1.5.1",
+        "leaflet-draw": "^1.0.4",
+        "leaflet-search": "^2.9.8",
+        "lightslider": "^1.1.6",
+        "masonry-layout": "^4.2.2",
+        "mustache": "^3.0.1",
+        "ncp": "^2.0.0",
+        "popper.js": "^1.14.4",
+        "system-sleep": "^1.3.6",
+        "uuid": "^3.3.3"
+    }
+}

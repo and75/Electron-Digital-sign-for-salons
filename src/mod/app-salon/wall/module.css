@@ -1,0 +1,16 @@
+.modal {
+    width: 25vw;
+    height: 100%;
+}
+.modal-backdrop {
+    width: 25vw;
+    height: 100vh;
+}
+.programme .bliwe-program-modal .modal-dialog {
+    margin: 10vw auto;
+    padding: 2vw;
+}
+.bliwe-planXL-col-left-program{
+    overflow: hidden;
+    height: 100vh;
+}

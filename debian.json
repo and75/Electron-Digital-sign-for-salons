@@ -1,0 +1,11 @@
+{
+	"dest": "release-builds/",
+	"icon": "/home/goldenee/simple-samples/activity-monitor/Electron_0.36.4_Icon.png",
+	"categories": [
+	"Utility"
+	],
+	"lintianOverrides": [
+	"changelog-file-missing-in-native-package"
+	]
+}
+

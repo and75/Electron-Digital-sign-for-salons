@@ -1,0 +1,46 @@
+<div class="percour-block-form">
+	<form>
+		<div class="form-group">
+		    <label for="exampleInputEmail1">Pour recevoir mon parcours par SMS</label>
+		    <div class="input-group input-group-lg">
+			  	<input type="text" name="phone-number" class="form-control phone-number" placeholder="Mon n° de telephone" aria-label="Mon n° de telephone">
+			  	<div class="input-group-append">
+			    	<button class="btn btn-lg" type="button" ontouchend="AppSalon.TotemSendPercour();">Ok</button>
+				</div>
+			</div>
+			<div class="simple-keyboard-percour"></div>
+			<div class="form-message"></div>
+		</div>
+	</form>
+</div>
+<div class="percour-block-title">
+	<div class="percour-title">Liste des exposants sélectionnés</div>	
+</div>
+<div class="percour-block-list">
+		<div class="bliwe-table-percour">
+			<div class="tbe-legend">
+				<ul>
+					<li>
+						<span class="tbp-td stand-label">Stand</span>
+						<span class="tbp-td exhib-label">Exposant</span>
+						<span class="tbp-td action-label">Supprimer</span>
+					</li>
+				</ul>
+			</div>
+			<div class="tbe-message">{{{message}}}</div>	
+			<div class="tbe-body">		
+				<ul>
+					{{#exhibitors}}
+						<li class="tbe-tr" id="exp_{{id}}">
+							<span class="tbp-td stand-label">{{stand-label}}</span>
+							<span class="tbp-td exhib-label">{{label}}</span>
+							<span class="tbp-td action-label">
+								<a  ontouchend="AppSalon.TotemUnsetPercourItem('{{stand-id}}', 'exp_{{id}}');"><span class="oi oi-circle-x"></span></a>
+							</span>
+						</li>
+					{{/exhibitors}} 	
+				</ul>
+				
+			</div>
+		</div>
+</div>

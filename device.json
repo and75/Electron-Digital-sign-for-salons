@@ -1,0 +1,88 @@
+{
+    "acceskey": "c016333d7ea64b34f9d3c3daea4f9fd6",
+    "eviroment": "prod",
+    "params": {
+        "project": "GO-ENTREPENEUR-PARIS-2021",
+        "id": "",
+        "module": "totem-salle",
+        "position": [
+            "-74.34375",
+            "135.3697613501194"
+        ],
+        "screen": {
+            "width": 1080,
+            "height": 1920,
+            "kiosk": true,
+            "backgroundColor": "#419dd4;"
+        },
+        "programme": {
+            "date": "2022-04-06",
+            "day": "6",
+            "days": [
+                {
+                    "num": "6",
+                    "month": "avril",
+                    "label": "MER."
+                },
+                {
+                    "num": "7",
+                    "month": "avril",
+                    "label": "JEU."
+                }
+            ]
+        },
+        "salle": {
+            "id": "2",
+            "name": "Main Stage"
+        },
+        "spots": {
+            "current": 0,
+            "group": 0,
+            "module": 
+                {
+                    "totem":
+                        {
+                            "position": [
+                                {"order": "0,1"},
+                                {"order": "0,2"},
+                                {"order": "0,3"},
+                                {"order": "0,4"},
+                                {"order": "0,5"},
+                                {"order": "0,6"},
+                                {"order": "0,7"},
+                                {"order": "0,8"}
+                            ],
+                            "items": [
+                                {"filename":"spot-totem-default.mp4"},
+                                {"filename":"CHARGEUR.mp4"},
+                                {"filename":"COMMUNAUTE.mp4"},
+                                {"filename":"COWORKING.mp4"},
+                                {"filename":"GLOBAL.mp4"},
+                                {"filename":"GOLF.mp4"},
+                                {"filename":"GRANDE-ROUE.mp4"},
+                                {"filename":"PETANQUE.mp4"},
+                                {"filename":"VELO.mp4"}
+                            ]
+                        },
+                    "wall": 
+                        {
+                            "position":{"order": "0,0"},
+                            "items": [{"filename":"spot-mur-default.mp4"}]
+                        }
+                }
+        }
+    },
+    "webservices": {
+        "appdata": {
+            "programmes": "http://goentrepreneur.napsy.com/webservice/conferences-liste",
+            "stands": "http://goentrepreneur.napsy.com/webservice/stands-liste",
+            "exposants": "http://goentrepreneur.napsy.com/webservice/exposants-liste"
+        },
+        "device": {
+            "getList": "http://goentrepreneur.napsy.com/webservice/app-salon-list-device",
+            "ping": "http://goentrepreneur.napsy.com/webservice/app-salon-ping-device",
+            "register": "http://goentrepreneur.napsy.com/webservice/app-salon-register-device"
+        },
+        "imageBase64": "http://goentrepreneur.napsy.com/webservice/image-liste-base64-exposant"
+    }
+}

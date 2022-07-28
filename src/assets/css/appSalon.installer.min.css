@@ -1,0 +1,82 @@
+/*
+*  AppSalon v2.2
+*  Style for Install screen
+*  16/10/2019
+*/
+
+@import url("vendors/jkeyboard.css");
+@import url("vendors/open-iconic-bootstrap.min.css");
+@import url("vendors/bootstrap.min.css");
+@import url("app-salon/appSalon.font.css");
+
+body.install{
+	background-color:#2e2e2e;
+	color:rgb(243, 243, 243);
+}
+.install .bliwe-module-header{
+	padding: 50px 0 0;
+}
+.install .bliwe-module-header h1{
+	line-height: 0;
+    font-size:2rem;
+}
+.install .bliwe-module-header span{
+    font-size:1.5rem;
+}
+.install .bliwe-module-body{
+	padding:15px 0;	
+}
+.install .bliwe-install-form {
+	margin: auto 0;
+}
+.install .bliwe-allert-mess-container{
+    width: 100%;
+    background: transparent;
+    margin-top: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+.install .bliwe-allert-mess{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    min-height:40px;
+}
+.install .bliwe-allert-mess.error{
+    background:#dc3545;
+    border: 2px solid #c10416;
+}
+.install .bliwe-allert-mess.warning{
+    background:#ffc107;
+	color: #000;
+    border: 2px solid #b18a14;
+}
+.install .bliwe-allert-mess.success{
+    background:#28a745;
+    border: 2px solid #1d7b32;
+}
+.install .bliwe-allert-mess-container .card{
+	padding:0;
+	border:0;
+	background:transparent;
+}
+.install .bliwe-allert-mess-container .card-body{
+	padding:0;
+	margin:0;
+}
+.install .bliwe-allert-mess-container .card-body p{
+	padding:5px 0;
+	margin:0;
+}
+
+.install .card-status {
+    background: #676d73!important;
+}
+.install .progress-bar {
+    color: #333;
+    text-align: left;
+    text-transform:uppercase;
+    background-color: #007bff;
+    transition: width .6s ease;
+    padding: 1px 5px;
+}

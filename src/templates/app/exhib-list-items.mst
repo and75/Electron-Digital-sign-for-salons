@@ -1,0 +1,31 @@
+
+{{#exhibitors}}
+    <tr style="width:100%" class="tbe-tr exhibitorItem  EXHIB-{{id}} STAND-{{stand-id}} {{#secteur}} SECTEUR-{{{id}}} {{/secteur}} {{#themes}}THEME-{{{id}}}{{/themes}} {{#halls}}{{{id}}}{{/halls}} {{#new}} NEW {{/new}} {{#option_gold}} GOLD {{/option_gold}}"
+        data-stand="{{stand-id}}" 
+        data-exhib="{{id}}"
+        data-stats='{"origin":"exhib-list", "action":"show-on-map", "search":"exp_{{id}}"}'>
+        <td class="tbe-td exhib-label">{{label}}</td>
+        <td class="tbe-td stand-label" >
+            {{stand-label}}
+        </td>
+        <td class="tbe-td stand-label" >
+            {{#new}}  
+                <img src="../../../assets/img/puce_new.png" style="width:30px;">
+            {{/new}}
+            {{#option_gold}}  
+                <img src="../../../assets/img/puce_gold.png" style="width:30px;">
+            {{/option_gold}}
+        </td>
+        <td class="tbe-td text-right">
+            <span class="pe-7s-map-marker bliwe-icon mr-1 bliwe-events" 
+                data-action="MapShowStand" 
+                data-param="{{{stand-id}}}" 
+                data-callback="TotemClosePage" 
+                data-stats='{"origin":"exhib-list","action":"add-to-percour","search":"exp_{{id}}"}'>
+            </span>
+            <!-- span class="pe-7s-shopbag bliwe-icon set-on-percour" data-action="TotemSetPercourItem" data-param="'{{stand-id}},exp_{{id}}'" 
+                data-stats='{"origin":"exhib-list","action":"add-to-percour","search":"exp_{{id}}"}'></span -->
+        </td>
+    </tr>
+{{/exhibitors}}
+

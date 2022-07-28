@@ -1,0 +1,75 @@
+<div id="filter-accordion new">
+	<div class="row bliwe-filter-menu">
+		<div class="col-md-12">
+			<div class="bliwe-totem-action-scroll">
+				<button class="btn-scroll text-white bliwe-events" data-action="TotemScrollElement" data-param="bliwe-conferences-list,up">
+					<span class="pe-7s-angle-down"></span>
+				</button>
+				<button class="btn-scroll text-white bliwe-events" data-action="TotemScrollElement" data-param="bliwe-conferences-list,down">
+					<span class="pe-7s-angle-up"></span>
+				</button>
+			</div>
+			<button class="btn text-white bliwe-events" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+				<span class="pe-7s-edit"></span> Filtrer ma recherche
+			</button>
+			<button class="btn btn-dark resetFilter d-relative mr-auto bliwe-events" data-action="ProgramResetFiltre">
+    			<span class="pe-7s-refresh-2"></span>
+			</button>
+		</div>
+	</div>
+	<div class="bliwe-filter-content">
+		<div id="collapseOne" class="collapse" aria-labelledby="headingTwo">
+			<div class="card">
+				<div class="card-body">
+					<div class="card-close"><button class="btn btn-close bliwe-events" data-action="ProgramCloseFilter"><span class="pe-7s-close bliwe-icon bliwe-icon-light"></span></button></div>
+					<div class="card-title mr-2"><strong>Formats</strong></div>
+					{{#items.type}}
+						<span class="mb-2 mr-2 bliwe-events" data-action="ProgramSetFilterElement" data-param="{{id}}" data-callback="ProgramCloseFilter">
+							{{libelle}} |
+						</span>
+					{{/items.type}}
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">	
+					<div class="card-title mr-2"><strong>Thématiques</strong></div>
+					{{#items.thematique}}
+						<span class="mb-2 mr-2 bliwe-events" data-action="ProgramSetFilterElement" data-param="{{id}}" data-callback="ProgramCloseFilter">
+							{{libelle}} |
+						</span>
+					{{/items.thematique}}
+				</div>
+			</div>
+            <div class="card" >
+				<div class="card-body">
+					<div class="card-title mr-2"><strong>Salle</strong></div>
+					{{#items.location}}
+						<span class="mb-2 mr-2 bliwe-events" data-action="ProgramSetFilterElement" data-param="{{id}}" data-callback="ProgramCloseFilter">
+							{{libelle}} |
+						</span>
+					{{/items.location}}
+				</div>
+			</div>
+            <div class="card" >
+				<div class="card-body">
+					<div class="card-title mr-2"><strong>Parcours créateur/Dirigeant</strong></div>
+					{{#items.parcours}}
+						<span class="mb-2 mr-2 bliwe-events" data-action="ProgramSetFilterElement" data-param="{{id}}" data-callback="ProgramCloseFilter">
+							{{libelle}} |
+						</span>
+					{{/items.parcours}}
+				</div>
+			</div>
+			<div class="card" >
+				<div class="card-body">
+					<div class="card-title mr-2"><strong>Partenaires</strong></div>
+					{{#items.partenaires}}
+						<span class="mb-2 mr-2 bliwe-events" data-action="ProgramSetFilterElement" data-param="{{id}}" data-callback="ProgramCloseFilter">
+							{{libelle}} |
+						</span>
+					{{/items.partenaires}}
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AppSalon 2.4 Installer</title>
+    <!-- APP SALON core CSS -->
+    <link href="../../assets/css/appSalon.installer.min.css" rel="stylesheet">
+    <!-- Module CSS -->
+
+</head>
+
+<body class="bliwe-main install">
+
+    <section role="main" class="bliwe-main-content">
+        <div class="bliwe-module-header">
+            <div class="container">
+                <h1 class="pb-3 border-bottom border-white">
+                    <span class="oi oi-tablet pr-2"></span>
+                    AppSalon 2.4 Installer
+                </h1>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            This procedure will install the "AppSalon 2" application on this PC.<br>
+                            To launch the installation procedure click on confirm button
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bliwe-module-body">
+            <div class="container">
+                <div id="install-report" class="bliwe-allert-mess-container">
+                    <div class="step-0"></div>
+                    <div class="step-1"></div>
+                    <div class="step-2"></div>
+                    <div class="step-3"></div>
+                    <div class="step-4 mt-5"></div>
+                    <div class="step-error"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="display:none"></div>
+                </div>
+                <div class="footer border-top border-white text-right">
+                    <button id="install-cancel" class="btn btn-secondary mt-3">Cancel</button>
+                    <button id="install-action" class="btn btn-primary mt-3">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Require App-Salon js files
+        require('../../../renderer.js');
+
+        // Require js specifique files
+        require('./installer.js');
+    </script>
+
+</body>
+
+</html>

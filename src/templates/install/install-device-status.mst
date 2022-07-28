@@ -1,0 +1,17 @@
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<div class="card text-white bg-dark card-status mb-3">
+			<div class="card-header"><span class="oi oi-project"></span> Json Status</div>
+			<div class="card-body">
+				{{#status.json}}
+				<div class="progress mb-2">
+  					<div class="progress-bar bg-warning" style="width: {{style}}%" role="progressbar" aria-valuenow="{{size}}" aria-valuemin="0" aria-valuemax="3000">{{label}} {{size}} Ko </div>
+				</div>
+				{{/status.json}}
+			</div>
+		</div>
+	</div>
+</div>
+	
+</div>

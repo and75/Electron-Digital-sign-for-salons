@@ -1,0 +1,19 @@
+{{#name}}
+  <div class="bliwe-logo" style="
+    background: #e4003a;
+    text-align: center;
+    padding: 40px 35px 20px;
+    margin: 0px -15px;
+  "><h1 class="text-uppercase text-secondary programme-title-salle">{{name}}</h1></div>
+{{/name}}
+
+<div class="card card-nextone mt-5" style="
+    position: absolute;
+    top: 400px;
+    left: 100px;
+   background: transparent;
+">
+		  <div class="card-body" style=" background: transparent;">
+		    <h1 class="text-dark" style="font-size:4rem">Les séances sont terminées.<br><small>À demain!</small></h2>
+		  </div>
+</div>

@@ -1,0 +1,7 @@
+<ul class="list-inline">
+	<li class="zoom-label">Zoom</li>
+	<li class="size-1"><a class="btn" data-zoom="1" ><span class="oi oi-plus"></span></a></li>
+	<li class="size-2"><a class="btn" data-zoom="1.5"><span class="oi oi-plus"></span></a></li>
+	<li class="size-3"><a class="btn" data-zoom="2"><span class="oi oi-plus"></span></a></li>
+	<li class="size-4"><a class="btn" data-zoom="3"><span class="oi oi-plus"></span></a></li>
+</ul>

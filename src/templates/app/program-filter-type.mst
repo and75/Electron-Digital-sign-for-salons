@@ -1,0 +1,14 @@
+<!-- div class="mb-2">Filter by conference type : </div -->
+<div class="" role="toolbar" aria-label="Toolbar with button groups">
+	<div class="btn-group mr-2" role="group" aria-label="First group">
+    	{{{items}}}
+  	</div>
+  	<div class="btn-group" role="group" aria-label="Third group">
+    	<button class="btn btn-dark resetFilter" ontouchend="AppSalon.ProgramResetFiltre()">
+    		<span class="pe-7s-refresh-2"></span>
+		</button>
+  	</div>
+</div>
+
+
+

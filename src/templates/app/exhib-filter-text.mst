@@ -1,0 +1,23 @@
+<div class="bliwe-exhib-filter-text">
+	{{#title}}
+	<div class="row">
+		<div class="col-md-12">
+			<div class="title">{{title}}</div>
+		</div>
+	</div>	
+	{{/title}}
+	<div class="row">
+		<div class="col-md-12">
+			<form>
+				<div class="simple-keyboard"></div>
+				<div class="input-group">
+				  <div class="input-group-append">
+				    <span class="input-group-text" id="basic-addon1"><span class="oi oi-magnifying-glass text-primary"></span></span>
+				  </div>
+				  <input type="text" name="totem_exhibitors" id="autocomplete" class="form-control" placeholder="Qui cherchez-vous ?">
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>	

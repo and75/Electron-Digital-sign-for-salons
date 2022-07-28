@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Bliwe 2019">
+    <title>Plan XL</title>
+    <!-- APP SALON core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./module.css" rel="stylesheet">
+
+</head>
+
+<body class="bliwe-main planXL programme no-percour">
+
+    <section role="main" class="bliwe-main-content  d-flex align-items-center" style="height:100vh">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-3">
+                    <div id="target1" class="square">
+                        Tap, Hold or Swipe me 1
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div id="target2" class="square">
+                        Tap, Hold or Swipe me 2
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div id="target3" class="square">
+                        Tap, Hold or Swipe me 3
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div id="target4" class="square">
+                        Tap, Hold or Swipe me 4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./touch-emulator.js"></script>
+    <script>
+         TouchEmulator(); 
+        //FUNCTION EXAMPLE POUR AJOUTER DE METHODES PUBLIQUES
+        TestMultiExt = {
+            logEvents: false,
+            tpCache: new Array(),
+            params: {
+
+            },
+            set_handlers: function set_handlers(name) {
+                // Install event handlers for the given element
+                var el = document.getElementById(name);
+                el.onclick = this.block_event;
+                el.ontouchstart = this.start_handler;
+                el.ontouchmove = this.move_handler;
+                // Use same handler for touchcancel and touchend
+                el.ontouchcancel = this.end_handler;
+                el.ontouchend = this.end_handler;
+            },
+            block_event: function(ev){
+                ev.preventDefault();
+            },
+            handle_pinch_zoom: function (ev) {
+                // This is a very basic 2-touch move/pinch/zoom handler that does not include
+                // error handling, only handles horizontal moves, etc.
+                if (ev.targetTouches.length == 2 && ev.changedTouches.length == 2) {
+                    // Check if the two target touches are the same ones that started
+                    // the 2-touch
+                    var point1 = -1, point2 = -1;
+                    for (var i = 0; i < this.tpCache.length; i++) {
+                        if (this.tpCache[i].identifier == ev.targetTouches[0].identifier) point1 = i;
+                        if (this.tpCache[i].identifier == ev.targetTouches[1].identifier) point2 = i;
+                    }
+                    if (point1 >= 0 && point2 >= 0) {
+                        // Calculate the difference between the start and move coordinates
+                        var diff1 = Math.abs(this.tpCache[point1].clientX - ev.targetTouches[0].clientX);
+                        var diff2 = Math.abs(this.tpCache[point2].clientX - ev.targetTouches[1].clientX);
+
+                        // This threshold is device dependent as well as application specific
+                        var PINCH_THRESHHOLD = ev.target.clientWidth / 10;
+                        if (diff1 >= PINCH_THRESHHOLD && diff2 >= PINCH_THRESHHOLD)
+                            ev.target.style.background = "green";
+                    }
+                    else {
+                        // empty tpCache
+                        this.tpCache = new Array();
+                    }
+                }
+            },
+            start_handler: function (ev) {
+                // If the user makes simultaneous touches, the browser will fire a 
+                // separate touchstart event for each touch point. Thus if there are 
+                // three simultaneous touches, the first touchstart event will have 
+                // targetTouches length of one, the second event will have a length 
+                // of two, and so on.
+                ev.preventDefault();
+                // Cache the touch points for later processing of 2-touch pinch/zoom
+                if (ev.targetTouches.length == 2) {
+                    for (var i = 0; i < ev.targetTouches.length; i++) {
+                        this.tpCache.push(ev.targetTouches[i]);
+                    }
+                }
+                if (this.logEvents) log("touchStart", ev, true);
+                TestMultiExt.update_background(ev);
+            },
+            move_handler: function (ev) {
+                // Note: if the user makes more than one "simultaneous" touches, most browsers 
+                // fire at least one touchmove event and some will fire several touchmoves.
+                // Consequently, an application might want to "ignore" some touchmoves.
+                //
+                // This function sets the target element's border to "dashed" to visually
+                // indicate the target received a move event.
+                //
+                ev.preventDefault();
+                if (this.logEvents) log("touchMove", ev, false);
+                // To avoid too much color flashing many touchmove events are started,
+                // don't update the background if two touch points are active
+                if (!(ev.touches.length == 2 && ev.targetTouches.length == 2))
+                    TestMultiExt.update_background(ev);
+
+                // Set the target element's border to dashed to give a clear visual
+                // indication the element received a move event.
+                ev.target.style.border = "dashed";
+
+                // Check this event for 2-touch Move/Pinch/Zoom gesture
+                TestMultiExt.handle_pinch_zoom(ev);
+            },
+            end_handler: function (ev) {
+                ev.preventDefault();
+                if (this.logEvents) log(ev.type, ev, false);
+                if (ev.targetTouches.length == 0) {
+                    // Restore background and border to original values
+                    ev.target.style.background = "white";
+                    ev.target.style.border = "1px solid black";
+                }
+            },
+            update_background: function (ev) {
+                // Change background color based on the number simultaneous touches
+                // in the event's targetTouches list:
+                //   yellow - one tap (or hold)
+                //   pink - two taps
+                //   lightblue - more than two taps
+                switch (ev.targetTouches.length) {
+                    case 1:
+                        // Single tap`
+                        ev.target.style.background = "yellow";
+                        break;
+                    case 2:
+                        // Two simultaneous touches
+                        ev.target.style.background = "#ff07be";
+                        break;
+                    default:
+                        // More than two simultaneous touches
+                        ev.target.style.background = "#00b9ff";
+                }
+            },
+            test: function () {
+
+               console.log('TestMultiExt is ready');
+
+                //Your Js Code
+                //alert('SalleFunctionTest It Works!!');
+
+            },
+            enableLog: function (ev) {
+                this.logEvents = this.logEvents ? false : true;
+            },
+            log: function (name, ev, printTargetIds) {
+                var o = document.getElementsByTagName('output')[0];
+                var s = name + ": touches = " + ev.touches.length +
+                    " ; targetTouches = " + ev.targetTouches.length +
+                    " ; changedTouches = " + ev.changedTouches.length;
+                o.innerHTML += s + "";
+
+                if (printTargetIds) {
+                    s = "";
+                    for (var i = 0; i < ev.targetTouches.length; i++) {
+                        s += "... id = " + ev.targetTouches[i].identifier + "";
+                    }
+                    o.innerHTML += s;
+                }
+            },
+            clearLog: function (event) {
+                var o = document.getElementsByTagName('output')[0];
+                o.innerHTML = "";
+            },
+            init: function (options) {
+                $.extend(true, this.params, options);
+                this.test();
+                this.set_handlers("target1");
+                this.set_handlers("target2");
+                this.set_handlers("target3");
+                this.set_handlers("target4");
+            }
+
+        }
+
+        $(function () {
+            TestMultiExt.init();
+        });
+    </script>
+</body>
+
+</html>

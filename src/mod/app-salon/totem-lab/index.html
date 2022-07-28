@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Programme</title>
+	<!-- APP SALON core CSS -->
+	<link href="../../../assets/css/appSalon.starter.css" rel="stylesheet">
+	<link href="./module.css" rel="stylesheet">
+</head>
+
+<body id="body" class="bliwe-main programme salle lab" data-context="programme">
+	<section class="appsalon-components bliwe-preloader" data-img="../../../assets/img/preloader.gif"></section>
+	<section class="appsalon-components bliwe-spot" role="spot" data-context="totem"
+		data-video="../../../assets/video/spot_totem_lab.mp4"></section>
+	<section role="main" class="bliwe-main-content">
+
+		<div class="bliwe-module-header"></div>
+		</div>
+		<div class="bliwe-module-body">
+			<div class="container-fluid">
+				<div class="appsalon-components bliwe-programme-list" data-action='ProgramSetList' data-context="salle"></div>
+			</div>
+		</div>
+		<div class="bliwe-module-footer"></div>
+		<div class="bliwe-banner-footer">
+			<div class="appsalon-components" data-img='../../../assets/img/totem-banner-footer-program.jpg'></div>
+		</div>
+		<div class="bliwe-main-footer">
+			<div class="bliwe-program-modal modal fade" id="program-modal" tabindex="-1" role="dialog"
+				aria-hidden="true">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<h2 class="title"></h2>
+							<div class="description"></div>
+							<div class="media">
+								<img src="" class="mr-3" alt="">
+								<div class="media-body intervenants"></div>
+							</div>
+						</div>
+						<div class="modal-footer text-center">
+							<p class="date"></p>
+							<p class="salle"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+
+		// Require App-Salon js files
+		require('../../../../renderer.js');
+
+		// Require js specifique files
+		require('./AppSalon.LabExt.js');
+
+		// Require js specifique files
+		require('./lab.js');
+
+	// You can also require other files to run in this process
+
+	</script>
+</body>
+
+</html>

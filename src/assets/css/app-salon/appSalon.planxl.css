@@ -1,0 +1,234 @@
+/*
+*  AppSalon v2.2
+*  Style for program Plan-XL screen
+*  16/10/2019
+*/
+
+.bliwe-main.planXL {
+    background: url(../../img/planXl-background.jpg);
+}
+
+.planXL .bliwe-planXL-col-left {
+    padding-top: 382px;
+    padding-bottom: 30px;
+    height: 100vh;
+    overflow: hidden
+}
+.planXL.programme .program-header-menuDay ul {
+    text-align: center;
+    padding-left: 0;
+}
+.planXL.programme .blewi-module {
+    padding-top: 556px;
+}
+
+.planXL.programme .bliwe-module-header {
+    padding-left: 5.5%;
+}
+
+.planXL.programme .bliwe-main-content {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.planXL.programme .program-header-title h1 {
+    color: transparent;
+}
+
+.planXL.programme .bliwe-program-scroller {
+    top: 25px;
+    height: 1315px;
+}
+
+.planXL.programme .bliwe-program-accordeon-filter .bliwe-filter-content {
+    background: #e4dede;
+    position: relative;
+    left: -52px;
+    top: 12px;
+    width: 25vw;
+}
+
+.planXL.programme .bliwe-filter-menu {
+    background-color: transparent;
+    text-align: left;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.planXL.programme .bliwe-filter-menu .btn.resetFilter {
+    background-color: transparent;
+    border-color: transparent;
+    left: 20px;
+    position: relative;
+    top: 0;
+}
+
+.planXL.programme .bliwe-exhib-filter-summary .bliwe-totem-action-scroll .btn-scroll {
+    background: #e4003a;
+}
+
+.planXL.programme .bliwe-exhib-filter-summary .bliwe-totem-action-scroll {
+    top: -4px;
+    right: 15px;
+}
+
+.planXL.programme .bliwe-program-card .card {
+    border: 1px solid #1d1d1b;
+}
+
+
+.planXL.programme .bliwe-program-card .card-body {
+    height: 263px;
+}
+
+.planXL .bliwe-exhib-filter-cat .filter-content .card-title {
+    color: #ffffff;
+}
+
+.planXL .bliwe-expo-multifilter .filter-menu {
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+}
+
+.planXL .bliwe-expo-multifilter .filter-menu .btn {
+    color: #1d1d1d;
+    background: transparent;
+    border-color: transparent;
+}
+
+.planXL .bliwe-expo-multifilter .filter-menu .icon {
+    color: #e4003a!important;
+}
+
+.planXL .bliwe-expo-multifilter .filter-menu .resetFilter {
+    top: 0;
+    left: 10px;
+}
+
+.planXL .bliwe-expo-multifilter .card-body {
+    background: #e4003a;
+    z-index: 1000;
+}
+
+.planXL .bliwe-expo-multifilter .filter-content {
+    text-align: center;
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+}
+
+.planXL .bliwe-expo-multifilter .card-close {
+    position: absolute;
+    right: 30px;
+}
+
+.planXL .bliwe-expo-multifilter .card-close .btn {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.planXL .bliwe-exhib-filter-summary {
+    padding: 15px 30px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.planXL .bliwe-map-backgound {}
+
+.planXL .bliwe-map-container {
+    background: 0 0!important;
+    width: 100%;
+    height: 84vh;
+    margin: 0;
+}
+
+.planXL .bliwe-map-legend,
+.planXL .bliwe-map-partenaire {
+    margin: 216px 0 0 900px;
+}
+
+.planXL .bliwe-map-legend img,
+.planXL .bliwe-map-partenaire img {
+    width: 100%
+}
+
+.planXL .bliwe-map-label {
+    position: absolute;
+    left: 25%;
+    z-index: 100
+}
+
+.planXL .bliwe-exhib-filter-text {
+    margin-bottom: 30px;
+}
+
+.planXL .jkeyboard-close,
+.planXL .jkeyboard-close .btn.btn-close {
+    display: none;
+}
+
+.planXL .bliwe-exhib-list {
+    margin-top: 50px;
+    color: #212529
+}
+
+.planXL .bliwe-table-exhibitors .tbe-legend .tbe-td.exhib-label,
+.planXL .bliwe-table-exhibitors .tbe-body .tbe-td.exhib-label {
+    width: 50%;
+}
+
+.planXL .bliwe-table-exhibitors .tbe-legend .tbe-td.hall-label,
+.planXL .bliwe-table-exhibitors .tbe-body .tbe-td.hall-label {
+    width: 25%;
+}
+
+.planXL .bliwe-table-exhibitors .tbe-td {
+    color: #212529
+}
+
+.planXL .bliwe-table-exhibitors .tbe-legend .tbe-tr {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.planXL .bliwe-table-exhibitors .tbe-body {
+    height: 1000px;
+    margin-top: 4px;
+}
+
+.planXL .bliwe-table-exhibitors .tbe-body .tbe-td.stand-label {
+    color: #212529;
+}
+
+.planXL .bliwe-map-indicator {
+    display: none;
+    position: absolute;
+    top: 40%;
+    z-index: 1000;
+    left: 36%
+}
+
+.planXL .bliwe-map-indicator.active {
+    display: block
+}
+
+.planXL .bliwe-pub-zone-2 {
+    background: #1d1d1b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.planXL .simple-keyboard {
+    background: transparent;
+    position: relative;
+    top: 0;
+}
+
+.planXL .jkeyboard .jline ul li {
+    font-family: arial, sans-serif;
+    background-color: #fff;
+}

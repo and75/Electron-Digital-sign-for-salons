@@ -1,0 +1,90 @@
+<div id="filter-accordion">
+	<div class="row bliwe-filter-menu">
+		<div class="col-md-12">
+			{{#types.type}}
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+				Filtrer par Type
+			</button>
+			{{/types.type}}
+
+			{{#types.location}}
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				Filtrer par Salle
+			</button>
+			{{/types.location}}
+
+			{{#types.themes}}
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				Filtrer par Thematique
+			</button>
+			{{/types.themes}}
+
+			{{#types.profil}}
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+				Filtrer par Profil
+			</button>
+			{{/types.profil}}
+			
+			<button class="btn btn-dark resetFilter" ontouchend="AppSalon.ProgramResetFiltre()">
+    			<span class="pe-7s-refresh-2"></span>
+			</button>
+
+		</div>
+	</div>
+	<div class="bliwe-filter-content">
+		<div id="collapseOne" class="collapse" aria-labelledby="headingTwo">
+			<div class="card">
+				
+				<div class="card-body mt-3">
+					<div class="card-close"><button class="btn btn-close" ontouchend="$('#collapseOne').collapse('toggle');"><span class="oi oi-circle-x"></span></button></div>
+					<div class="card-title">Type de conferences</div>
+					{{#items.type}}
+						<button class="btn btn-outline-dark mb-2 mr-2" ontouchend="AppSalon.ProgramSetFilterElement('{{id}}');$('#collapseOne').collapse('toggle');" data.locationId="{{id}}">
+							{{libelle}}
+						</button>
+					{{/items.type}}
+				</div>
+			</div>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+			<div class="card" >
+				
+				<div class="card-body mt-3">
+					<div class="card-close"><button class="btn btn-close" ontouchend="$('#collapseTwo').collapse('toggle');"><span class="oi oi-circle-x"></span></button></div>
+					<div class="card-title">Salles</div>
+					{{#items.location}}
+						<button class="btn btn-outline-dark mb-2 mr-2" ontouchend="AppSalon.ProgramSetFilterElement('{{id}}');$('#collapseTwo').collapse('toggle');" data.locationId="{{id}}">
+							{{libelle}}
+						</button>
+					{{/items.location}}
+				</div>
+			</div>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+			<div class="card">
+				<div class="card-body mt-3">
+				<div class="card-close"><button class="btn btn-close" ontouchend="$('#collapseThree').collapse('toggle');"><span class="oi oi-circle-x"></span></button></div>					
+					<div class="card-title">Thematiques</div>
+					{{#items.thematique}}
+						<button class="btn btn-outline-dark mb-2 mr-2" ontouchend="AppSalon.ProgramSetFilterElement('{{id}}');$('#collapseThree').collapse('toggle');" data.locationId="{{id}}">
+							{{libelle}}
+						</button>
+					{{/items.thematique}}
+				</div>
+			</div>
+		</div>
+		<div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+			<div class="card">
+				<div class="card-body mt-3">
+				<div class="card-close"><button class="btn btn-close" ontouchend="$('#collapseFour').collapse('toggle');"><span class="oi oi-circle-x"></span></button></div>					
+					<div class="card-title">Profil</div>
+					{{#items.profil}}
+						<button class="btn btn-outline-dark mb-2 mr-2" ontouchend="AppSalon.ProgramSetFilterElement('{{id}}');$('#collapseFour').collapse('toggle');" data.locationId="{{id}}">
+							{{libelle}}
+						</button>
+					{{/items.profil}}
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

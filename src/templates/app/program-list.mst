@@ -1,0 +1,13 @@
+{{{#programItems}}}
+<div class="bliwe-program-scroller bliwe-sroller-container">
+	<div class="row px-2 bliwe-conferences-list">
+		{{{programItems}}}
+		<div class="col bliwe-program-message" >
+			<h2>Aucun événement n'a été trouvé.</h2>
+			<p>Soit la journée est terminée, soit votre recherche n'a donné aucun résultat.<br>
+			<b>Essayez de changer le jour ou de changer votre choix de filtre de recherche</b></p>
+		</div>
+	</div>
+
+</div>
+{{{#programItems}}}

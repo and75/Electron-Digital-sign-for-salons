@@ -1,0 +1,50 @@
+<div class="modal-header">
+	<button type="button" class="close">
+		<span class="bliwe-events" data-action="ProgramCloseModal">×</span>
+	</button>
+</div>
+<div class="modal-body">
+    <div class="modal-type ">
+        <h6 class="mb-3 font-weight-bold" style="color:#00549f">Numéro de l'intervention {{code_intervention}}</h6>
+    </div>
+	<h2 class="title">{{{titre}}}</h2>
+	<div class="description">
+		{{{description}}}
+    </div>
+    <div class="modal-type text-primary mt-5">
+		<p>
+			{{#thematiques}}#{{libelle}} {{/thematiques}}
+		</p>
+	</div>
+    {{#ctrlPartenaires}}
+    <div class="partenaires my-4">
+        <h4>Sponsorisé par</h4>
+        <div class="row">
+           {{#partenaires}}
+           <div class="col-3 ">
+                <img src="{{img_path}}partenaires/{{imageLocal}}.png" class="w-100 border border-light" alt="{{titre}}">
+            </div>
+           {{/partenaires}}  
+        </div>     
+    </div>
+    {{/ctrlPartenaires}}
+    
+    {{#ctrlIntervenant}}
+    <div class="intervenants my-4">
+		<h4>Présentée par</h4>
+	   	<div class="row">
+        {{#intervenants}}
+            <div class="col-3 ">
+                <img src="{{img_path}}intervenants/{{imageLocal}}.png" class="border rounded rounded-circle w-80 mb-2" alt="{{nom}}">
+                <h6><b>{{prenom}} / {{nom}} </b></h6>
+                <p>{{#societe}}{{societe}}<br>{{/societe}}{{fonction}}</p>
+            </div>
+        {{/intervenants}}
+        </div>
+    </div>
+       {{/ctrlIntervenant}}
+</div>
+<div class="modal-footer text-center">
+	<p class="date">{{heure_debut}} / {{heure_fin}}</p>
+	<p class="salle">{{salle_libelle}}</p>
+</div>

@@ -1,0 +1,22 @@
+{
+    "debug": "false",
+    "debug_val": {
+        "DateNow": {
+            "time": "08:00",
+            "day": "6",
+            "month": "04",
+            "year": "2022",
+            "fulldate": "2022-04-06",
+            "fulldate_time": "2022-04-06 08:00"
+        },
+        "show_poligon": false
+    },
+    "programme": {
+        "date": "2022-04-06",
+        "day": "6",
+        "days": [
+            { "num": "6", "month": "avril", "label": "MER." },
+            { "num": "7", "month": "avril", "label": "JEU." }
+        ]
+    }
+}

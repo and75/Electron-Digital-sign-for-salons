@@ -1,0 +1,61 @@
+<div class="bliwe-exhib-filter-cat">
+	{{#title}}
+	<div class="row">
+		<div class="col-md-12">
+			<div class="title">{{title}}</div>
+		</div>
+	</div>
+	{{/title}}					
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div id="filter-accordion" class="bliwe-expo-multifilter">
+				<div class="filter-menu">
+					<button class="btn btn-primary collapsed bliwe-events" data-action="ExhibCloseFilter">
+							<span class="pe-7s-edit icon"></span> Filtrer ma recherche
+					</button>
+				</div>
+				<div class="filter-content">
+					<div id="collapseExhib" class="card collapse" aria-labelledby="headingTwo" data-parent="#filter-accordion">
+						<div class="card-body text-left p-5">
+							<div class="card-close">
+							<button class="btn btn-close"><span class="oi oi-circle-x bliwe-events" data-action="ExhibCloseFilter"></span></button></div>
+											{{#types.secteurs}}
+												<div class="card-title py-3">Filtrer par Secteurs</div>
+												<div >
+													{{#items.secteurs}}
+														<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="secteur,{{id}}" data-callback="ExhibCloseFilter">
+															{{libelle}}
+														</button>
+													{{/items.secteurs}}
+												</div>
+											{{/types.secteurs}}
+
+											{{#types.themes}}
+												<div class="card-title  py-3">Filtrer par Secteurs</div>
+												<div >
+													{{#items.themes}}
+														<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="themes,{{id}}" data-callback="ExhibCloseFilter">
+															{{libelle}}
+														</button>
+													{{/items.themes}}
+												</div>
+											{{/types.themes}}
+
+											{{#types.stand}}
+												<div class="card-title  py-3">Filtrer par Stand</div>
+												<div >
+													{{#items.stand}}
+														<button class="btn btn-outline-light mb-2 mr-2 bliwe-events" data-action="ExhibFilterExhibitors" data-param="stands,{{id}}" data-callback="ExhibCloseFilter">
+															{{libelle}}
+														</button>
+													{{/items.stand}}
+												</div>
+											{{/types.stand}}
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</div>
+</div>

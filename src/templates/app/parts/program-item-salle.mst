@@ -1,0 +1,51 @@
+{{#isFirst}}
+<div class="px-2 bliwe-program-card SALLE-{{salle_id}} {{salle_id}} {{day_conf}} TIME-{{date_fin_timestamp}} {{#type}}{{id}}{{/type}}  {{#thematiques}} {{id}} {{/thematiques}} {{#profils}}{{id}} {{/profils}} ">
+{{#logo}}<div class="bliwe-logo text-center"><img src="{{img_path}}exhibitors/{{logo}}.png"></div>{{/logo}}
+{{^logo}}<div class="bliwe-logo"><h1 class="text-uppercase text-secondary programme-title-salle">{{salle_libelle}}</h1></div>{{/logo}}
+<div id="{{id}}" class="card card-nextone mb-4" >
+		  <div class="card-header">
+		    <h2>EN COURS</h2>
+            <div class="infos">{{heure_debut}} / {{heure_fin}}</div>
+		  </div>
+		  <div class="card-body">
+			<h1>{{titre}}</h1>
+			<p class="card-text">
+				{{description}}
+			</p>
+            <p>
+				{{#thematiques}}#{{libelle}} {{/thematiques}}
+			</p>
+		  </div>
+			{{#ctrlIntervenants}}
+
+			<div class="card-body intervenat-liste-new">
+                <h4 class="pb-2 text-uppercase">Présentée par</h4>
+                <div class="row">
+	            {{#intervenants}}
+					<div class="col-3">
+						<img src="{{img_path}}intervenants/{{imageLocal}}.png" class="border rounded rounded-circle w-100 mb-2" alt="{{nom}}">
+  						<span class="infos">{{prenom}} {{nom }}</span>
+						<span class="fonction d-block small">{{societe}}<span>
+						<span class="fonction d-block small">{{fonction}}<span>
+					</div>
+	            {{/intervenants}}
+                </div>
+			</div>
+ 		    {{/ctrlIntervenants}}
+		  </div>
+
+
+</div>
+</div>
+
+{{/isFirst}}
+
+{{^isFirst}}
+<li class="px-2  bliwe-program-card SALLE-{{salle_id}} {{salle_id}} {{day_conf}} TIME-{{date_fin_timestamp}} {{#type}}{{id}}{{/type}}  {{#thematiques}} {{id}} {{/thematiques}} {{#profils}}{{id}} {{/profils}} ">
+    <div id="{{id}}" class="mb-4" ontouchend="AppSalon.ProgramShowBox({{id}});">
+        <p class="date">{{heure_debut}} / {{heure_fin}}</p>
+        <h5  class="card-title">{{titre}}</h5>
+    </div>
+</li>
+
+{{/isFirst}}

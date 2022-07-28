@@ -1,0 +1,450 @@
+/*
+*  AppSalon v2.2
+*  Style for Totem screen
+*  16/10/2019
+*/
+
+.leaflet-popup-content p {
+    margin: 8px 0;
+}
+
+.bliwe-main.programme {
+    background: url(../../img/totem_background-global1.png);
+}
+
+.bliwe-main.programme.salle {
+    background: url(../../img/totem_background-global2.png);
+}
+
+.bliwe-main.map {
+    background: url(../../img/totem_background-global1b.png);
+}
+
+.totem .bliwe-main-content {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.totem .module-content-main {
+    transition: left .5s;
+    /* left: 0; */
+    top: 330px;
+    height: 1587px;
+    width: 1080px;
+    z-index: 5;
+}
+
+.totem .module-content-left {
+    background: url(../../img/totem_background-global3.png);
+    height: 1587px;
+    width: 1080px;
+    position: fixed;
+    z-index: 50;
+    top: 323px;
+    left: -1080px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.totem .bliwe-banner-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.totem .bliwe-banner-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.totem .bliwe-banner-module {
+    width: 100%;
+    text-align: center
+}
+
+.totem .bliwe-banner-module img {
+    width: 80%
+}
+
+.totem .simple-keyboard {}
+
+.totem .jkeyboard-close {
+    text-align: right;
+    background: #e4003a;
+    padding: 0;
+    height: 0;
+    display: none;
+}
+
+.totem .jkeyboard-close .btn {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-right: 0;
+    color: #ffffff;
+}
+
+.totem .jkeyboard .jline .backspace {
+    background-color: #ececec
+}
+
+.totem .bliwe-plantotem-menu {
+    width: 100%;
+    padding: 0 15px;
+    height: 165px;
+}
+
+.totem .bliwe-plantotem-menu .btn {
+    padding: 30px 50px;
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+}
+
+.totem .bliwe-map-container {
+    background: 0 0;
+    width: 997px;
+    height: 850px;
+    padding: 0px;
+    z-index: 5;
+    left: 28px;
+}
+
+.totem .bliwe-map-legend {
+    margin: 45px 60px 16px;
+}
+
+.totem .bliwe-map-legend img,
+.totem .bliwe-map-partenaire img {
+    width: 100%
+}
+
+.totem .bliwe-slide-close {
+    font-size: 2rem;
+    text-align: right;
+    background: #e4003a;
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding: 0 30px 0;
+    line-height: 0;
+    height: 0;
+}
+
+.totem .bliwe-slide-close a {
+    color: #fff
+}
+
+.totem .bliwe-slide-content.exposant-list,
+.totem .bliwe-slide-content.parcours {
+    display: none;
+    opacity: 0;
+    transition: opacity .5s
+}
+
+.totem .bliwe-slide-content.exposant-list.active,
+.totem .bliwe-slide-content.parcours.active {
+    display: block;
+    opacity: 1
+}
+
+.totem .bliwe-exhib-filtre {}
+
+.totem .bliwe-exhib-filter-summary {
+    padding: 28px 45px 15px 30px;
+    border-bottom: 1px solid #adb5bd;
+}
+
+.totem .bliwe-exhib-filter-view p {}
+
+.totem .bliwe-exhib-list {
+    margin: -3px 36px 0;
+}
+
+.totem .bliwe-exhib-filter-body {
+    background: #f7f7f7;
+}
+
+.totem .bliwe-exhib-filter-text {
+    height: 375px;
+}
+
+.totem .bliwe-exhib-filter-text .input-group {
+    border: 1px solid #adb5bd;
+    width: 80%;
+    margin-left: 78px;
+    top: -20px;
+}
+
+.input-group-append {
+    margin-left: 0px;
+}
+
+.totem .bliwe-exhib-filter-text .input-group .form-control {
+    font-size: 1.8rem !important;
+}
+
+.totem .bliwe-exhib-filter-cat {}
+
+.totem .bliwe-expo-multifilter {
+    min-height: 100px;
+}
+
+.totem .bliwe-expo-multifilter .card-body,
+.totem .bliwe-expo-multifilter .card-title {
+    text-align: left;
+    padding: 15px 30px
+}
+
+.totem .bliwe-expo-multifilter .card-body {
+    height: 40vh;
+    overflow-y: scroll;
+    text-transform: uppercase
+}
+
+.totem .bliwe-expo-multifilter .card-title {
+    font-size: 1.6rem
+}
+
+.totem .bliwe-expo-multifilter .card-body ul {
+    padding: 0 30px;
+    margin: 0;
+    font-size: 1.6rem
+}
+
+.totem .bliwe-expo-multifilter .card-body li {
+    margin-bottom: 10px
+}
+
+.totem .bliwe-expo-multifilter .filter-content {
+    height: 1272px;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    right: -100vw;
+    overflow-x: hidden;
+    transition: .5s;
+    padding: 30px;
+    color: #1d1d1b;
+}
+
+.totem .bliwe-filterside-close {
+    text-align: right;
+    height: 0;
+}
+
+.totem .bliwe-filterside-close span {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.totem .bliwe-exhib-panel {
+    background: #fff
+}
+
+.totem .bliwe-exhib-panel tbody {
+    height: 800px;
+    overflow: scroll
+}
+
+.totem .bliwe-exhib-filter-reset {}
+
+.totem .bliwe-exhib-filter-reset a.btn {}
+
+.totem .bliwe-percour-panel {
+    color: #1d1d1b
+}
+
+.totem .bliwe-percour-panel .percour-title {
+    font-size: 2.5rem;
+    padding: 30px 0;
+    text-align: center
+}
+
+.totem .bliwe-percour-panel .bliwe-table-exhibitors .tbe-body {
+    height: 310px
+}
+
+.totem .bliwe-percour-panel .bliwe-table-exhibitors .tbe-body .tbe-td,
+.totem .bliwe-percour-panel .bliwe-table-exhibitors .tbe-legend .tbe-td {
+    font-size: 1.7rem
+}
+
+.totem .bliwe-percour-panel .percour-block-form {
+    background: #e4003a;
+    padding: 30px 100px 55px;
+    margin: 0;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+
+.totem .bliwe-percour-panel .percour-block-form label {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%
+}
+
+.totem .percour-block-form .btn {
+    font-size: 2.2rem!important;
+    color: #fff!important;
+    padding: 0 12px!important;
+    line-height: 0!important;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #1a6897;
+}
+
+.totem .form-message {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 1080px;
+    height: 80px;
+    padding: 15px 10px;
+    background: #dc3545;
+    border-radius: 0;
+    text-align: center;
+    display: none;
+    color: #fff !important;
+}
+
+.totem .form-message.active {
+    display: block
+}
+
+.totem .simple-keyboard {
+    position: relative;
+    background: #f7f7f7;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 290px;
+    padding-top: 15px;
+    z-index: 100;
+}
+
+.totem .simple-keyboard-percour {
+    position: relative;
+    background: #e4003a;
+    left: 40px;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    display: none;
+    padding: 20px 0;
+}
+
+.totem .simple-keyboard-percour.active {
+    display: block;
+}
+
+.totem .simple-keyboard-percour .jkeyboard-close {
+    text-align: right;
+    padding: 0;
+    height: 25px
+}
+
+.totem .simple-keyboard-percour .jkeyboard-close .btn {
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-right: 60px;
+    color: #ffffff;
+}
+
+.totem .simple-keyboard-percour .jkeyboard .jline {
+    display: inline-block;
+    margin: 0 0px;
+}
+
+.totem .simple-keyboard-percour .jkeyboard .jline .backspace {
+    background-color: #f7faf7;
+    width: 52px;
+}
+
+.totem .bliwe-table-percour {
+    border-top: 1px solid #6c757d;
+}
+
+.totem .bliwe-table-percour .tbe-legend {
+    border-bottom: 1px solid #6c757d;
+}
+
+.totem .bliwe-table-percour .tbe-message div {
+    padding: 30px 55px;
+    font-size: 1.4rem;
+}
+
+.totem .bliwe-table-percour ul {
+    list-style: none;
+    margin: 0;
+}
+
+.totem .bliwe-table-percour li {}
+
+.totem .bliwe-table-percour li span {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 15px;
+}
+
+.totem .bliwe-table-percour li span.stand-label {
+    width: 20%;
+}
+
+.totem .bliwe-table-percour li span.exhib-label {
+    width: 60%;
+}
+
+.totem .bliwe-table-percour li span.action-label {
+    width: 18%;
+}
+
+.bliwe-totem-action-scroll {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+}
+
+.bliwe-totem-action-scroll .btn-scroll {
+    font-size: 4rem;
+    line-height: 0;
+    margin: 0px 7.5px;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.programme .bliwe-filter-menu .btn.resetFilter {
+    position: absolute;
+    left: 50px;
+}
+
+.programme .bliwe-program-scroller {
+    overflow-y: hidden;
+    overflow-x: hidden
+}
+
+.programme .bliwe-conferences-list {
+    margin: 0 60px;
+    position: relative;
+    top: 10px;
+}
+
+.bliwe-table-exhibitors .tbe-body {
+    overflow-y: hidden;
+}
+
+.bliwe-exhibitors-list {
+    position: relative;
+    top: 0;
+}
+
+.totem.map .bliwe-totem-action-scroll .btn-scroll {
+    background: #1d1d1b;
+}
+
+.totem.map .bliwe-totem-action-scroll {
+    right: -1px;
+    top: -7px;
+}
