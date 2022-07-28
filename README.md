@@ -1,23 +1,24 @@
 # Présentation
 
-"AppSalon" est une application "Multitouch" JQuery/Bootstrap de type OOP (Object-oriented programming)
-avec un système de gabarits (géré avec Mustache.js) qui séparent la visualisation depuis le contrôle (un système presque de type MVC).
-L'application est composée d'un objet Core qui fournit des services et fonctionnalités global: 
-- initialisation de l'application
-- initialisation de modules
-- lecture de modèles html
-- exécution de fonctions chronométrées
-- utilitaires de lecture et de formatage de données telles que: json, tableau, images et objets
-- interface avec les processus "main" et "render" d'Electron
+"AppSalon" is a "Multitouch" JQuery/Bootstrap OOP (Object-oriented programming) application
+with a system of templates (managed with Mustache.js) that separate visualization from control (an almost MVC-like system).
+The application is composed of a Core object which provides global services and functionalities:
 
-et une série d'objets modules spécialisés pour l'implémentation de fonctions specifique et la gestion de modules d'affichage dédiés (totem et mur).
+- application initialization
+- module initialization
+- reading html templates
+- performing timed functions
+- utilities for reading and formatting data such as: json, array, images and objects
+- interface with Electron's "main" and "render" processes
 
-### A propos de la version 2.4
+and a series of specialized module objects for the implementation of specific functions and the management of dedicated display modules (totem and wall).
 
-La version 2.4 implémente la fonctionnalité multitouch en introduisant l'utilisation de la bibliothèque Hammer.js
+### About version 2.4
+
+Version 2.4 implements multitouch functionality by introducing the use of the Hammer.js library
 - https://hammerjs.github.io/
 
-## Bibliothèques utilisées
+## Dependencies
 **JS**
 - "axios": "^0.21.1",
 - "base64-img": "^1.0.4",
@@ -45,27 +46,26 @@ La version 2.4 implémente la fonctionnalité multitouch en introduisant l'utili
 
 
 ### Electron
-Dans cette version, l'application est implémentée dans Electron pour permettre son exécution hors ligne sur les appareils tactiles sous le système d'exploitation Windows.
-Electron gère:
-- L'installation
-- Récupération et stockage de données (json, images)
-- Écriture en temps réel de données statistiques (stocage de type Json)
-- Envoi de données statiques et de donnes concernat l'état de l'application au serveur via cron
+In this version, the application is implemented in Electron to allow its execution offline on touch devices under the Windows operating system.
+- Installation
+- Data recovery and storage (json, images)
+- Real-time writing of statistical data (Json type storage)
+- Sending static data and application state data to the server via cron
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s- bash-shell/) or use `node` from the command prompt.
 
 
-## Comment installer et utiliser l'application
+## How to install and use the app
 
 ### Install Node 
-Pour une utilisation correcte de l'application, vous avez besoin de:
+For correct use of the application you need:
 
 - NodeJs v14.15.1
 - Npm 6.14.8
 
-Pour ceux qui ne connaissent pas il est tout à fait possible d'avoir différentes versions de node et donc de npm
+For those who do not know it is quite possible to have different versions of node and therefore of npm
 
-Une fois Node installé, vous devez vous rendre dans le dossier de votre projet.
+Once Node is installed, you need to go to your project folder.
 
 #### Install dependencies
 `npm install`
@@ -76,6 +76,7 @@ Une fois Node installé, vous devez vous rendre dans le dossier de votre projet.
 
 ## Build the application
 ```bash
+
 #Build for windows run
 npm run build-win
 
